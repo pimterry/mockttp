@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TimingEvents | mockttp</title>
+	<title>TlsTimingEvents | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/_types_.html">&quot;types&quot;</a>
 				</li>
 				<li>
-					<a href="_types_.timingevents.html">TimingEvents</a>
+					<a href="_types_.tlstimingevents.html">TlsTimingEvents</a>
 				</li>
 			</ul>
-			<h1>Interface TimingEvents</h1>
+			<h1>Interface TlsTimingEvents</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TimingEvents</span>
+						<span class="target">TlsTimingEvents</span>
 					</li>
 				</ul>
 			</section>
@@ -82,12 +82,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#abortedtimestamp" class="tsd-kind-icon">aborted<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#bodyreceivedtimestamp" class="tsd-kind-icon">body<wbr>Received<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#headerssenttimestamp" class="tsd-kind-icon">headers<wbr>Sent<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#responsesenttimestamp" class="tsd-kind-icon">response<wbr>Sent<wbr>Timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.timingevents.html#starttimestamp" class="tsd-kind-icon">start<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlstimingevents.html#connecttimestamp" class="tsd-kind-icon">connect<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlstimingevents.html#failuretimestamp" class="tsd-kind-icon">failure<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlstimingevents.html#handshaketimestamp" class="tsd-kind-icon">handshake<wbr>Timestamp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlstimingevents.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlstimingevents.html#tunneltimestamp" class="tsd-kind-icon">tunnel<wbr>Timestamp</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,42 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="abortedtimestamp" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> aborted<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">aborted<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="connecttimestamp" class="tsd-anchor"></a>
+					<h3>connect<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">connect<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L121">src/types.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L73">src/types.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="bodyreceivedtimestamp" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> body<wbr>Received<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">body<wbr>Received<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="failuretimestamp" class="tsd-anchor"></a>
+					<h3>failure<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">failure<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L118">src/types.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L74">src/types.ts:74</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="headerssenttimestamp" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers<wbr>Sent<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">headers<wbr>Sent<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<a name="handshaketimestamp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> handshake<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">handshake<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L119">src/types.ts:119</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="responsesenttimestamp" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> response<wbr>Sent<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">response<wbr>Sent<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L120">src/types.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L75">src/types.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,17 +130,17 @@
 					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L113">src/types.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L69">src/types.ts:69</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="starttimestamp" class="tsd-anchor"></a>
-					<h3>start<wbr>Timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">start<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="tunneltimestamp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tunnel<wbr>Timestamp</h3>
+					<div class="tsd-signature tsd-kind-icon">tunnel<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L117">src/types.ts:117</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L76">src/types.ts:76</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -215,39 +204,36 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_types_.request.html" class="tsd-kind-icon">Request</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_types_.timingevents.html" class="tsd-kind-icon">Timing<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_types_.tlsrequest.html" class="tsd-kind-icon">Tls<wbr>Request</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_types_.timingevents.html" class="tsd-kind-icon">Timing<wbr>Events</a>
+						<a href="_types_.tlstimingevents.html" class="tsd-kind-icon">Tls<wbr>Timing<wbr>Events</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#abortedtimestamp" class="tsd-kind-icon">aborted<wbr>Timestamp</a>
+								<a href="_types_.tlstimingevents.html#connecttimestamp" class="tsd-kind-icon">connect<wbr>Timestamp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#bodyreceivedtimestamp" class="tsd-kind-icon">body<wbr>Received<wbr>Timestamp</a>
+								<a href="_types_.tlstimingevents.html#failuretimestamp" class="tsd-kind-icon">failure<wbr>Timestamp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#headerssenttimestamp" class="tsd-kind-icon">headers<wbr>Sent<wbr>Timestamp</a>
+								<a href="_types_.tlstimingevents.html#handshaketimestamp" class="tsd-kind-icon">handshake<wbr>Timestamp</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#responsesenttimestamp" class="tsd-kind-icon">response<wbr>Sent<wbr>Timestamp</a>
+								<a href="_types_.tlstimingevents.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_types_.timingevents.html#starttimestamp" class="tsd-kind-icon">start<wbr>Timestamp</a>
+								<a href="_types_.tlstimingevents.html#tunneltimestamp" class="tsd-kind-icon">tunnel<wbr>Timestamp</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_types_.tlsrequest.html" class="tsd-kind-icon">Tls<wbr>Request</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_types_.tlstimingevents.html" class="tsd-kind-icon">Tls<wbr>Timing<wbr>Events</a>
-					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_types_.html#default_standalone_port" class="tsd-kind-icon">DEFAULT_<wbr>STANDALONE_<wbr>PORT</a>
 					</li>

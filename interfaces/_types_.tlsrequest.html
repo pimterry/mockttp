@@ -85,7 +85,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#failurecause" class="tsd-kind-icon">failure<wbr>Cause</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#hostname" class="tsd-kind-icon">hostname</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#remoteipaddress" class="tsd-kind-icon">remote<wbr>IpAddress</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#remoteport" class="tsd-kind-icon">remote<wbr>Port</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#tags" class="tsd-kind-icon">tags</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.tlsrequest.html#timingevents" class="tsd-kind-icon">timing<wbr>Events</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,7 +101,7 @@
 					<div class="tsd-signature tsd-kind-icon">failure<wbr>Cause<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"closed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"reset"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"cert-rejected"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"no-shared-cipher"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"unknown"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/5dc10a5/src/types.ts#L62">src/types.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L63">src/types.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -109,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">hostname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/5dc10a5/src/types.ts#L60">src/types.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L60">src/types.ts:60</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,7 +121,17 @@
 					<div class="tsd-signature tsd-kind-icon">remote<wbr>IpAddress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/5dc10a5/src/types.ts#L61">src/types.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L61">src/types.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="remoteport" class="tsd-anchor"></a>
+					<h3>remote<wbr>Port</h3>
+					<div class="tsd-signature tsd-kind-icon">remote<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L62">src/types.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +141,17 @@
 					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/5dc10a5/src/types.ts#L63">src/types.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L64">src/types.ts:64</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="timingevents" class="tsd-anchor"></a>
+					<h3>timing<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">timing<wbr>Events<span class="tsd-signature-symbol">:</span> <a href="_types_.tlstimingevents.html" class="tsd-signature-type">TlsTimingEvents</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/51cf199/src/types.ts#L65">src/types.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -211,12 +233,21 @@
 								<a href="_types_.tlsrequest.html#remoteipaddress" class="tsd-kind-icon">remote<wbr>IpAddress</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_.tlsrequest.html#remoteport" class="tsd-kind-icon">remote<wbr>Port</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_types_.tlsrequest.html#tags" class="tsd-kind-icon">tags</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_types_.tlsrequest.html#timingevents" class="tsd-kind-icon">timing<wbr>Events</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_types_.tlstimingevents.html" class="tsd-kind-icon">Tls<wbr>Timing<wbr>Events</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/_types_.html#default_standalone_port" class="tsd-kind-icon">DEFAULT_<wbr>STANDALONE_<wbr>PORT</a>
 					</li>
