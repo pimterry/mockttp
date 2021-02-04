@@ -109,6 +109,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#addrules" class="tsd-kind-icon">add<wbr>Rules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#anyrequest" class="tsd-kind-icon">any<wbr>Request</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#anywebsocket" class="tsd-kind-icon">any<wbr>Web<wbr>Socket</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#enabledebug" class="tsd-kind-icon">enable<wbr>Debug</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#get" class="tsd-kind-icon">get</a></li>
@@ -138,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L78">src/mockttp.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L81">src/mockttp.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">proxy<wbr>Env<span class="tsd-signature-symbol">:</span> <a href="_types_.proxyconfig.html" class="tsd-signature-type">ProxyConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L89">src/mockttp.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L92">src/mockttp.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,7 +173,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L65">src/mockttp.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L68">src/mockttp.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L341">src/mockttp.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L359">src/mockttp.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,15 +228,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L94">src/mockttp.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L100">src/mockttp.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Get a builder for a mock rule that will match any requests on any path.</p>
 								</div>
+								<p>This only matches traditional HTTP requests, not websockets, which are handled
+								separately. To match websockets, use <code>.anyWebSocket()</code>.</p>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="anywebsocket" class="tsd-anchor"></a>
+					<h3>any<wbr>Web<wbr>Socket</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">any<wbr>Web<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_websockets_mock_ws_rule_builder_.mockwsrulebuilder.html" class="tsd-signature-type">MockWsRuleBuilder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L254">src/mockttp.ts:254</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get a builder for a mock rule that will match all websocket connections.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_websockets_mock_ws_rule_builder_.mockwsrulebuilder.html" class="tsd-signature-type">MockWsRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -249,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L170">src/mockttp.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L180">src/mockttp.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L52">src/mockttp.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L55">src/mockttp.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,7 +339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L113">src/mockttp.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L120">src/mockttp.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L357">src/mockttp.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L375">src/mockttp.ts:375</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,7 +404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L364">src/mockttp.ts:364</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L382">src/mockttp.ts:382</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +428,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L208">src/mockttp.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L220">src/mockttp.ts:220</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -452,7 +477,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L249">src/mockttp.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L267">src/mockttp.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L261">src/mockttp.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L279">src/mockttp.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L273">src/mockttp.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L291">src/mockttp.ts:291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -588,7 +613,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L286">src/mockttp.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L304">src/mockttp.ts:304</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -634,7 +659,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L305">src/mockttp.ts:305</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L323">src/mockttp.ts:323</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -685,7 +710,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L311">src/mockttp.ts:311</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L329">src/mockttp.ts:329</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,7 +754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L331">src/mockttp.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L349">src/mockttp.ts:349</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -790,7 +815,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L236">src/mockttp.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L249">src/mockttp.ts:249</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -839,7 +864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L189">src/mockttp.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L200">src/mockttp.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -882,7 +907,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L132">src/mockttp.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L140">src/mockttp.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -925,7 +950,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L151">src/mockttp.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L160">src/mockttp.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -968,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L58">src/mockttp.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L61">src/mockttp.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -991,7 +1016,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L352">src/mockttp.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L370">src/mockttp.ts:370</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1024,7 +1049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L42">src/mockttp.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L45">src/mockttp.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1057,7 +1082,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L47">src/mockttp.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L50">src/mockttp.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1079,7 +1104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L72">src/mockttp.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L75">src/mockttp.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1132,6 +1157,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#anyrequest" class="tsd-kind-icon">any<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_mockttp_.mockttp.html#anywebsocket" class="tsd-kind-icon">any<wbr>Web<wbr>Socket</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#delete" class="tsd-kind-icon">delete</a>

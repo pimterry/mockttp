@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>headers<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/client/mockttp-client.ts#L74">src/client/mockttp-client.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/client/mockttp-client.ts#L78">src/client/mockttp-client.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -127,7 +127,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#cors">cors</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L376">src/mockttp.ts:376</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L394">src/mockttp.ts:394</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,7 +147,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#debug">debug</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L381">src/mockttp.ts:381</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L399">src/mockttp.ts:399</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,7 +163,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#http2">http2</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L402">src/mockttp.ts:402</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L420">src/mockttp.ts:420</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +186,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#https">https</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L389">src/mockttp.ts:389</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L407">src/mockttp.ts:407</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -205,7 +205,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#ignorewebsockethostcertificateerrors">ignoreWebsocketHostCertificateErrors</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L429">src/mockttp.ts:429</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L450">src/mockttp.ts:450</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,9 +214,15 @@
 								certificate errors should be ignored, allowing the use of self-signed or
 							otherwise invalid WSS certificates.</p>
 						</div>
-						<p>This is a temporary API, and will be removed in future, once full websocket
-							interception and mocking support is available so that this option can be
-						configured on individual rules instead.</p>
+						<p>This was a temporary API, it&#39;s now deprecated, and it will be removed in
+							future. <code>anyWebSocket().thenPassThrough({ ignoreHostCertificateErrors: [...] })</code>
+							should be used instead, to handle this with a rule in the same way that
+						HTTP passthrough certificate errors are handled.</p>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Use anyWebSocket to handle websockets explicitly instead.</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -226,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#maxbodysize">maxBodySize</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L455">src/mockttp.ts:455</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L476">src/mockttp.ts:476</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +253,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#recordtraffic">recordTraffic</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L444">src/mockttp.ts:444</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L465">src/mockttp.ts:465</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +277,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#standaloneserverurl">standaloneServerUrl</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L408">src/mockttp.ts:408</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L426">src/mockttp.ts:426</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -288,7 +294,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_mockttp_.mockttpoptions.html">MockttpOptions</a>.<a href="_mockttp_.mockttpoptions.html#suggestchanges">suggestChanges</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/461d88e/src/mockttp.ts#L418">src/mockttp.ts:418</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/366f156/src/mockttp.ts#L436">src/mockttp.ts:436</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

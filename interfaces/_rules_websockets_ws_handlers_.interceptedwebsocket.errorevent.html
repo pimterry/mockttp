@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OpenEvent | mockttp</title>
+	<title>ErrorEvent | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,16 +54,16 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_server_websocket_handler_.html">&quot;server/websocket-handler&quot;</a>
+					<a href="../modules/_rules_websockets_ws_handlers_.html">&quot;rules/websockets/ws-handlers&quot;</a>
 				</li>
 				<li>
-					<a href="_server_websocket_handler_.interceptedwebsocket.html">InterceptedWebSocket</a>
+					<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.html">InterceptedWebSocket</a>
 				</li>
 				<li>
-					<a href="_server_websocket_handler_.interceptedwebsocket.openevent.html">OpenEvent</a>
+					<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html">ErrorEvent</a>
 				</li>
 			</ul>
-			<h1>Interface OpenEvent</h1>
+			<h1>Interface ErrorEvent</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">OpenEvent</span>
+						<span class="target">ErrorEvent</span>
 					</li>
 				</ul>
 			</section>
@@ -85,7 +85,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_server_websocket_handler_.interceptedwebsocket.openevent.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,12 +97,42 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/ws/index.d.ts:180</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>message</h3>
+					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/ws/index.d.ts:181</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="target" class="tsd-anchor"></a>
 					<h3>target</h3>
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebSocket</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in node_modules/@types/ws/index.d.ts:176</li>
+							<li>Defined in node_modules/@types/ws/index.d.ts:183</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in node_modules/@types/ws/index.d.ts:182</li>
 						</ul>
 					</aside>
 				</section>
@@ -112,25 +145,34 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_server_websocket_handler_.html">&quot;server/websocket-<wbr>handler&quot;</a>
+						<a href="../modules/_rules_websockets_ws_handlers_.html">&quot;rules/websockets/ws-<wbr>handlers&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_server_websocket_handler_.websockethandler.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Handler</a>
+						<a href="../classes/_rules_websockets_ws_handlers_.passthroughwebsockethandler.html" class="tsd-kind-icon">Pass<wbr>Through<wbr>Web<wbr>Socket<wbr>Handler</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_server_websocket_handler_.interceptedwebsocket.html" class="tsd-kind-icon">Intercepted<wbr>Web<wbr>Socket</a>
+						<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.html" class="tsd-kind-icon">Intercepted<wbr>Web<wbr>Socket</a>
 						<ul>
 							<li class="current tsd-kind-interface tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_server_websocket_handler_.interceptedwebsocket.openevent.html" class="tsd-kind-icon">Open<wbr>Event</a>
+								<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html" class="tsd-kind-icon">Error<wbr>Event</a>
 								<ul>
 									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-										<a href="_server_websocket_handler_.interceptedwebsocket.openevent.html#target" class="tsd-kind-icon">target</a>
+										<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#error" class="tsd-kind-icon">error</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#message" class="tsd-kind-icon">message</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#target" class="tsd-kind-icon">target</a>
+									</li>
+									<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+										<a href="_rules_websockets_ws_handlers_.interceptedwebsocket.errorevent.html#type" class="tsd-kind-icon">type</a>
 									</li>
 								</ul>
 							</li>
@@ -138,8 +180,23 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_rules_websockets_ws_handlers_.websockethandler.html" class="tsd-kind-icon">Web<wbr>Socket<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_rules_websockets_ws_handlers_.html#net" class="tsd-kind-icon">net</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_server_websocket_handler_.html#isopen" class="tsd-kind-icon">is<wbr>Open</a>
+						<a href="../modules/_rules_websockets_ws_handlers_.html#isopen" class="tsd-kind-icon">is<wbr>Open</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_rules_websockets_ws_handlers_.html#mirrorrejection" class="tsd-kind-icon">mirror<wbr>Rejection</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_rules_websockets_ws_handlers_.html#pipewebsocket" class="tsd-kind-icon">pipe<wbr>Web<wbr>Socket</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="../modules/_rules_websockets_ws_handlers_.html#wshandlerlookup" class="tsd-kind-icon">Ws<wbr>Handler<wbr>Lookup</a>
 					</li>
 				</ul>
 			</nav>
