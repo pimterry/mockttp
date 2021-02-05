@@ -1,0 +1,1336 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RequestRuleBuilder | mockttp</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">mockttp</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_rules_requests_request_rule_builder_.html">&quot;rules/requests/request-rule-builder&quot;</a>
+				</li>
+				<li>
+					<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html">RequestRuleBuilder</a>
+				</li>
+			</ul>
+			<h1>Class RequestRuleBuilder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_rules_base_rule_builder_.baserulebuilder.html" class="tsd-signature-type">BaseRuleBuilder</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">RequestRuleBuilder</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#completionchecker" class="tsd-kind-icon">completion<wbr>Checker</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#matchers" class="tsd-kind-icon">matchers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenjson" class="tsd-kind-icon">thenJSON</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#always" class="tsd-kind-icon">always</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#forhost" class="tsd-kind-icon">for<wbr>Host</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thencallback" class="tsd-kind-icon">then<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thencloseconnection" class="tsd-kind-icon">then<wbr>Close<wbr>Connection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenforwardto" class="tsd-kind-icon">then<wbr>Forward<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenfromfile" class="tsd-kind-icon">then<wbr>From<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenjson-1" class="tsd-kind-icon">then<wbr>Json</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenstream" class="tsd-kind-icon">then<wbr>Stream</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thentimeout" class="tsd-kind-icon">then<wbr>Timeout</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thrice" class="tsd-kind-icon">thrice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#times" class="tsd-kind-icon">times</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#twice" class="tsd-kind-icon">twice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withbody" class="tsd-kind-icon">with<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withcookie" class="tsd-kind-icon">with<wbr>Cookie</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withexactquery" class="tsd-kind-icon">with<wbr>Exact<wbr>Query</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withform" class="tsd-kind-icon">with<wbr>Form</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withjsonbody" class="tsd-kind-icon">with<wbr>Json<wbr>Body</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withjsonbodyincluding" class="tsd-kind-icon">with<wbr>Json<wbr>Body<wbr>Including</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withquery" class="tsd-kind-icon">with<wbr>Query</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Request<wbr>Rule<wbr>Builder<span class="tsd-signature-symbol">(</span>addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Request<wbr>Rule<wbr>Builder<span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><a href="../enums/_types_.method.html" class="tsd-signature-type">Method</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, addRule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L46">src/rules/requests/request-rule-builder.ts:46</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Mock rule builders should be constructed through the Mockttp instance you&#39;re
+									using, not directly. You shouldn&#39;t ever need to call this constructor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>addRule: <span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>rule: <a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L52">src/rules/requests/request-rule-builder.ts:52</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Mock rule builders should be constructed through the Mockttp instance you&#39;re
+									using, not directly. You shouldn&#39;t ever need to call this constructor.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>method: <a href="../enums/_types_.method.html" class="tsd-signature-type">Method</a></h5>
+								</li>
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+								<li>
+									<h5>addRule: <span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>rule<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>rule: <a href="../interfaces/_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="completionchecker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagOptional">Optional</span> completion<wbr>Checker</h3>
+					<div class="tsd-signature tsd-kind-icon">completion<wbr>Checker<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_rules_completion_checkers_.rulecompletionchecker.html" class="tsd-signature-type">RuleCompletionChecker</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#completionchecker">completionChecker</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L67">src/rules/base-rule-builder.ts:67</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="matchers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> matchers</h3>
+					<div class="tsd-signature tsd-kind-icon">matchers<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_rules_matchers_.requestmatcher.html" class="tsd-signature-type">RequestMatcher</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#matchers">matchers</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L66">src/rules/base-rule-builder.ts:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="thenjson" class="tsd-anchor"></a>
+					<h3>thenJSON</h3>
+					<div class="tsd-signature tsd-kind-icon">thenJSON<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenjson-1" class="tsd-signature-type">thenJson</a><span class="tsd-signature-symbol"> = this.thenJson</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L160">src/rules/requests/request-rule-builder.ts:160</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Deprecated alias for thenJson</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="always" class="tsd-anchor"></a>
+					<h3>always</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">always<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#always">always</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L165">src/rules/base-rule-builder.ts:165</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule forever, for all matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="forhost" class="tsd-anchor"></a>
+					<h3>for<wbr>Host</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Host<span class="tsd-signature-symbol">(</span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#forhost">forHost</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L72">src/rules/base-rule-builder.ts:72</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests sent to the given host</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>host: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="once" class="tsd-anchor"></a>
+					<h3>once</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#once">once</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L173">src/rules/base-rule-builder.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule only once, for the first matching request</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thencallback" class="tsd-anchor"></a>
+					<h3>then<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Callback<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L187">src/rules/requests/request-rule-builder.ts:187</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Call the given callback for any matched requests that are received,
+									and build a response from the result.</p>
+								</div>
+								<p>The callback should return a response object or a promise for one.
+									The response object may include various fields to define the response.
+								All fields are optional, with the defaults listed below.</p>
+								<p>Valid fields are:</p>
+								<ul>
+									<li><code>status</code> (number, defaults to 200)</li>
+									<li><code>body</code> (string or buffer, defaults to empty)</li>
+									<li><code>headers</code> (object with string keys &amp; values, defaults to standard required headers)</li>
+									<li><code>json</code> (object, which will be sent as a JSON response, unset by default)</li>
+								</ul>
+								<p>If the callback throws an exception, the server will return a 500
+								with the exception message.</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>request: <a href="../interfaces/_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thencloseconnection" class="tsd-anchor"></a>
+					<h3>then<wbr>Close<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Close<wbr>Connection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L385">src/rules/requests/request-rule-builder.ts:385</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Close connections that match this rule immediately, without
+									any status code or response.</p>
+								</div>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenforwardto" class="tsd-anchor"></a>
+					<h3>then<wbr>Forward<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Forward<wbr>To<span class="tsd-signature-symbol">(</span>forwardToLocation<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_type_utils_.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.passthroughhandleroptions.html" class="tsd-signature-type">PassThroughHandlerOptions</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"forwarding"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>forwarding<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_type_utils_.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PassThroughHandlerOptions</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"forwarding"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"targetHost"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L352">src/rules/requests/request-rule-builder.ts:352</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Forward matched requests on to the specified forwardToUrl. The url
+										specified must not include a path. Otherwise, an error is thrown.
+									The path portion of the original request url is used instead.</p>
+								</div>
+								<p>The url may optionally contain a protocol. If it does, it will override
+									the protocol (and potentially the port, if unspecified) of the request.
+									If no protocol is specified, the protocol (and potentially the port)
+								of the original request URL will be used instead.</p>
+								<p>This method also takes options to configure how the request is passed
+								through, see thenPassThrough for more details.</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>forwardToLocation: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../modules/_util_type_utils_.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_rules_requests_request_handlers_.passthroughhandleroptions.html" class="tsd-signature-type">PassThroughHandlerOptions</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"forwarding"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>forwarding<span class="tsd-signature-symbol">?: </span><a href="../modules/_util_type_utils_.html#omit" class="tsd-signature-type">Omit</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PassThroughHandlerOptions</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">"forwarding"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"targetHost"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenfromfile" class="tsd-anchor"></a>
+					<h3>then<wbr>From<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>From<wbr>File<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">then<wbr>From<wbr>File<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, statusMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, filePath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L248">src/rules/requests/request-rule-builder.ts:248</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reply to matched requests with a given status code and the current contents
+										of a given file. The status message and headers can also be optionally
+										provided here. If no headers are provided, only the standard required
+									headers are set.</p>
+								</div>
+								<p>The file is read near-fresh for each request, and external changes to its
+								content will be immediately appear in all subsequent requests.</p>
+								<p>If one string argument is provided, it&#39;s used as the body file path.
+									If two are provided (even if one is empty), then 1st is the status message,
+								and the 2nd the body. This matches the argument order of thenReply().</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L249">src/rules/requests/request-rule-builder.ts:249</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>statusMessage: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>filePath: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenjson-1" class="tsd-anchor"></a>
+					<h3>then<wbr>Json</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Json<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L139">src/rules/requests/request-rule-builder.ts:139</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reply to matched requests with the given status &amp; JSON and (optionally)
+									extra headers.</p>
+								</div>
+								<p>This method is shorthand for:
+								server.get(...).thenReply(status, JSON.stringify(data), { &#39;Content-Type&#39;: &#39;application/json&#39; })</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">object</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol"> = {}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenpassthrough" class="tsd-anchor"></a>
+					<h3>then<wbr>Pass<wbr>Through</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Pass<wbr>Through<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_rules_requests_request_handlers_.passthroughhandleroptions.html" class="tsd-signature-type">PassThroughHandlerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L321">src/rules/requests/request-rule-builder.ts:321</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pass matched requests through to their real destination. This works
+										for proxied requests only, direct requests will be rejected with
+									an error.</p>
+								</div>
+								<p>This method takes options to configure how the request is passed
+								through. The available options are:</p>
+								<ul>
+									<li>ignoreHostCertificateErrors, a list of hostnames for which server
+									certificate errors should be ignored (none, by default).</li>
+									<li>clientCertificateHostMap, a mapping of hosts to client certificates to use,
+									in the form of { key, cert } objects (none, by default)</li>
+									<li>beforeRequest, a callback that will be passed the full request
+										before it is passed through, and which returns an object that defines
+										how the the request content should be changed before it&#39;s passed
+									to the upstream server (details below).</li>
+									<li>beforeResponse, a callback that will be passed the full response
+										before it is completed, and which returns an object that defines
+										how the the response content should be changed before it&#39;s returned
+									to the client (details below).</li>
+								</ul>
+								<p>The beforeRequest &amp; beforeResponse callbacks should return objects
+									defining how the request/response should be changed. All fields on
+								the object are optional. The valid fields are:</p>
+								<p>Valid fields are:</p>
+								<ul>
+									<li>Request only: <code>method</code> (a replacement HTTP verb, capitalized)</li>
+									<li>Request only: <code>url</code> (a full URL to send the request to)</li>
+									<li>Request only: <code>response</code> (a response callback result: if provided
+										this will be used directly, the request will not be passed through
+									at all, and any beforeResponse callback will never fire)</li>
+									<li>Response only: <code>status</code> (number, will replace the HTTP status code)</li>
+									<li>Both: <code>headers</code> (object with string keys &amp; values, replaces all
+									headers if set)</li>
+									<li>Both: <code>body</code> (string or buffer, replaces the body if set)</li>
+									<li>Both: <code>json</code> (object, to be sent as a JSON-encoded body, taking
+									precedence over <code>body</code> if both are set)</li>
+								</ul>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_rules_requests_request_handlers_.passthroughhandleroptions.html" class="tsd-signature-type">PassThroughHandlerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenreply" class="tsd-anchor"></a>
+					<h3>then<wbr>Reply</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Reply<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Reply<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, statusMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L92">src/rules/requests/request-rule-builder.ts:92</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Reply to matched requests with a given status code and (optionally) status message,
+									body and headers.</p>
+								</div>
+								<p>If one string argument is provided, it&#39;s used as the body. If two are
+									provided (even if one is empty), then 1st is the status message, and
+									the 2nd the body. If no headers are provided, only the standard required
+								headers are set, e.g. Date and Transfer-Encoding.</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L93">src/rules/requests/request-rule-builder.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>statusMessage: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thenstream" class="tsd-anchor"></a>
+					<h3>then<wbr>Stream</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Stream<span class="tsd-signature-symbol">(</span>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stream<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readable</span>, headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L217">src/rules/requests/request-rule-builder.ts:217</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Respond immediately with the given status (and optionally, headers),
+									and then stream the given stream directly as the response body.</p>
+								</div>
+								<p>Note that streams can typically only be read once, and as such
+									this rule will only successfully trigger once. Subsequent requests
+									will receive a 500 and an explanatory error message. To mock
+									repeated requests with streams, create multiple streams and mock
+								them independently.</p>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>status: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>stream: <span class="tsd-signature-type">Readable</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> headers: <a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="thentimeout" class="tsd-anchor"></a>
+					<h3>then<wbr>Timeout</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">then<wbr>Timeout<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/requests/request-rule-builder.ts#L407">src/rules/requests/request-rule-builder.ts:407</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Hold open connections that match this rule, but never respond
+									with anything at all, typically causing a timeout on the client side.</p>
+								</div>
+								<p>Calling this method registers the rule with the server, so it
+								starts to handle requests.</p>
+								<p>This method returns a promise that resolves with a mocked endpoint.
+									Wait for the promise to confirm that the rule has taken effect
+									before sending requests to be matched. The mocked endpoint
+								can be used to assert on the requests matched by this rule.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="thrice" class="tsd-anchor"></a>
+					<h3>thrice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">thrice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#thrice">thrice</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L189">src/rules/base-rule-builder.ts:189</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule three times, for the first three matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="times" class="tsd-anchor"></a>
+					<h3>times</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">times<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#times">times</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L197">src/rules/base-rule-builder.ts:197</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule the given number of times, for the first matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="twice" class="tsd-anchor"></a>
+					<h3>twice</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">twice<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#twice">twice</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L181">src/rules/base-rule-builder.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Run this rule twice, for the first two matching requests</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withbody" class="tsd-anchor"></a>
+					<h3>with<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Body<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withbody">withBody</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L115">src/rules/base-rule-builder.ts:115</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests whose bodies either exactly match the given string
+										(if a string is passed) or whose bodies match a regular expression
+									(if a regex is passed).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>content: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withcookie" class="tsd-anchor"></a>
+					<h3>with<wbr>Cookie</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Cookie<span class="tsd-signature-symbol">(</span>cookie<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withcookie">withCookie</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L157">src/rules/base-rule-builder.ts:157</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests that include the given cookies</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cookie: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withexactquery" class="tsd-anchor"></a>
+					<h3>with<wbr>Exact<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Exact<wbr>Query<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withexactquery">withExactQuery</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L97">src/rules/base-rule-builder.ts:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests that include the exact query string provided.
+									The query string must start with a ? or be entirely empty.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withform" class="tsd-anchor"></a>
+					<h3>with<wbr>Form</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Form<span class="tsd-signature-symbol">(</span>formData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withform">withForm</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L105">src/rules/base-rule-builder.ts:105</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests whose bodies include the given form data.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>formData: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withheaders" class="tsd-anchor"></a>
+					<h3>with<wbr>Headers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Headers<span class="tsd-signature-symbol">(</span>headers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withheaders">withHeaders</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L80">src/rules/base-rule-builder.ts:80</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests that include the given headers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>headers: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withjsonbody" class="tsd-anchor"></a>
+					<h3>with<wbr>Json<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Json<wbr>Body<span class="tsd-signature-symbol">(</span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withjsonbody">withJsonBody</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L131">src/rules/base-rule-builder.ts:131</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests whose bodies exactly match the given
+									object, when parsed as JSON.</p>
+								</div>
+								<p>Note that this only tests that the body can be parsed
+								as JSON - it doesn&#39;t require a content-type header.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>json: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withjsonbodyincluding" class="tsd-anchor"></a>
+					<h3>with<wbr>Json<wbr>Body<wbr>Including</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Json<wbr>Body<wbr>Including<span class="tsd-signature-symbol">(</span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withjsonbodyincluding">withJsonBodyIncluding</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L147">src/rules/base-rule-builder.ts:147</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests whose bodies match (contain equivalent
+										values, ignoring extra values) the given object, when
+										parsed as JSON. Matching behaviour is the same as Lodash&#39;s
+									_.isMatch method.</p>
+								</div>
+								<p>Note that this only tests that the body can be parsed
+								as JSON - it doesn&#39;t require a content-type header.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>json: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="withquery" class="tsd-anchor"></a>
+					<h3>with<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">with<wbr>Query<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_rules_base_rule_builder_.baserulebuilder.html">BaseRuleBuilder</a>.<a href="_rules_base_rule_builder_.baserulebuilder.html#withquery">withQuery</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/rules/base-rule-builder.ts#L88">src/rules/base-rule-builder.ts:88</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match only requests that include the given query parameters.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>query: <span class="tsd-signature-symbol">{}</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-index-signature">
+											<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_rules_requests_request_rule_builder_.html">&quot;rules/requests/request-<wbr>rule-<wbr>builder&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-kind-icon">Request<wbr>Rule<wbr>Builder</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#completionchecker" class="tsd-kind-icon">completion<wbr>Checker</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#matchers" class="tsd-kind-icon">matchers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenjson" class="tsd-kind-icon">thenJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#always" class="tsd-kind-icon">always</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#forhost" class="tsd-kind-icon">for<wbr>Host</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#once" class="tsd-kind-icon">once</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thencallback" class="tsd-kind-icon">then<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thencloseconnection" class="tsd-kind-icon">then<wbr>Close<wbr>Connection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenforwardto" class="tsd-kind-icon">then<wbr>Forward<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenfromfile" class="tsd-kind-icon">then<wbr>From<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenjson-1" class="tsd-kind-icon">then<wbr>Json</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenpassthrough" class="tsd-kind-icon">then<wbr>Pass<wbr>Through</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenreply" class="tsd-kind-icon">then<wbr>Reply</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thenstream" class="tsd-kind-icon">then<wbr>Stream</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thentimeout" class="tsd-kind-icon">then<wbr>Timeout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#thrice" class="tsd-kind-icon">thrice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#times" class="tsd-kind-icon">times</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#twice" class="tsd-kind-icon">twice</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withbody" class="tsd-kind-icon">with<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withcookie" class="tsd-kind-icon">with<wbr>Cookie</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withexactquery" class="tsd-kind-icon">with<wbr>Exact<wbr>Query</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withform" class="tsd-kind-icon">with<wbr>Form</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withheaders" class="tsd-kind-icon">with<wbr>Headers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withjsonbody" class="tsd-kind-icon">with<wbr>Json<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withjsonbodyincluding" class="tsd-kind-icon">with<wbr>Json<wbr>Body<wbr>Including</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_rules_requests_request_rule_builder_.requestrulebuilder.html#withquery" class="tsd-kind-icon">with<wbr>Query</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

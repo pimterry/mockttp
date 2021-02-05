@@ -73,7 +73,7 @@
 						<p>A mockttp instance allow you to start and stop mock servers and control their behaviour.</p>
 					</div>
 					<p>Call <code>.start()</code> to set up a server on a random port, use methods like <code>.get(url)</code>,
-						<code>.post(url)</code> and <code>.anyRequest()</code> to get a <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html">MockRuleBuilder</a> and start defining
+						<code>.post(url)</code> and <code>.anyRequest()</code> to get a <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html">RequestRuleBuilder</a> and start defining
 					mock rules. Call <code>.stop()</code> when your test is complete.</p>
 				</div>
 			</section>
@@ -107,8 +107,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#addrequestrules" class="tsd-kind-icon">add<wbr>Request<wbr>Rules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#addrules" class="tsd-kind-icon">add<wbr>Rules</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#addwsrules" class="tsd-kind-icon">add<wbr>WsRules</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#addwebsocketrules" class="tsd-kind-icon">add<wbr>Web<wbr>Socket<wbr>Rules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#anyrequest" class="tsd-kind-icon">any<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#anywebsocket" class="tsd-kind-icon">any<wbr>Web<wbr>Socket</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#delete" class="tsd-kind-icon">delete</a></li>
@@ -123,8 +124,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#post" class="tsd-kind-icon">post</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#put" class="tsd-kind-icon">put</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#setrequestrules" class="tsd-kind-icon">set<wbr>Request<wbr>Rules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#setrules" class="tsd-kind-icon">set<wbr>Rules</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#setwsrules" class="tsd-kind-icon">set<wbr>WsRules</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#setwebsocketrules" class="tsd-kind-icon">set<wbr>Web<wbr>Socket<wbr>Rules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#start" class="tsd-kind-icon">start</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#stop" class="tsd-kind-icon">stop</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_mockttp_.mockttp.html#urlfor" class="tsd-kind-icon">url<wbr>For</a></li>
@@ -141,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L81">src/mockttp.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L81">src/mockttp.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">proxy<wbr>Env<span class="tsd-signature-symbol">:</span> <a href="_types_.proxyconfig.html" class="tsd-signature-type">ProxyConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L92">src/mockttp.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L92">src/mockttp.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L68">src/mockttp.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L68">src/mockttp.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,16 +191,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="addrules" class="tsd-anchor"></a>
-					<h3>add<wbr>Rules</h3>
+					<a name="addrequestrules" class="tsd-anchor"></a>
+					<h3>add<wbr>Request<wbr>Rules</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_mock_rule_.mockruledata.html" class="tsd-signature-type">MockRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Request<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L359">src/mockttp.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L359">src/mockttp.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,14 +208,14 @@
 									<p>Adds the given rules to the server.</p>
 								</div>
 								<p>This API is only useful if you&#39;re manually building rules, rather than
-									using MockRuleBuilder, and is only for special cases. This approach may
+									using RequestRuleBuilder, and is only for special cases. This approach may
 									be necessary if you need to configure all your rules in one place to
 								enable them elsewhere/later.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_mock_rule_.mockruledata.html" class="tsd-signature-type">MockRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -221,16 +223,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="addwsrules" class="tsd-anchor"></a>
-					<h3>add<wbr>WsRules</h3>
+					<a name="addrules" class="tsd-anchor"></a>
+					<h3>add<wbr>Rules</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>WsRules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_websockets_mock_ws_rule_.mockwsruledata.html" class="tsd-signature-type">MockWsRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L380">src/mockttp.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L375">src/mockttp.ts:375</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>alias for <code>addRequestRules</code></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="addwebsocketrules" class="tsd-anchor"></a>
+					<h3>add<wbr>Web<wbr>Socket<wbr>Rules</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Web<wbr>Socket<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_websockets_websocket_rule_.websocketruledata.html" class="tsd-signature-type">WebSocketRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L390">src/mockttp.ts:390</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -238,14 +270,14 @@
 									<p>Adds the given websocket rules to the server.</p>
 								</div>
 								<p>This API is only useful if you&#39;re manually building rules, rather than
-									using MockRuleBuilder, and is only for special cases. This approach may
+									using RequestRuleBuilder, and is only for special cases. This approach may
 									be necessary if you need to configure all your rules in one place to
 								enable them elsewhere/later.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_websockets_mock_ws_rule_.mockwsruledata.html" class="tsd-signature-type">MockWsRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_websockets_websocket_rule_.websocketruledata.html" class="tsd-signature-type">WebSocketRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -256,13 +288,13 @@
 					<a name="anyrequest" class="tsd-anchor"></a>
 					<h3>any<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">any<wbr>Request<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">any<wbr>Request<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L100">src/mockttp.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L100">src/mockttp.ts:100</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -272,7 +304,7 @@
 								<p>This only matches traditional HTTP requests, not websockets, which are handled
 								separately. To match websockets, use <code>.anyWebSocket()</code>.</p>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -280,13 +312,13 @@
 					<a name="anywebsocket" class="tsd-anchor"></a>
 					<h3>any<wbr>Web<wbr>Socket</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">any<wbr>Web<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_websockets_mock_ws_rule_builder_.mockwsrulebuilder.html" class="tsd-signature-type">MockWsRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">any<wbr>Web<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_websockets_websocket_rule_builder_.websocketrulebuilder.html" class="tsd-signature-type">WebSocketRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L254">src/mockttp.ts:254</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L254">src/mockttp.ts:254</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -294,7 +326,7 @@
 									<p>Get a builder for a mock rule that will match all websocket connections.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_websockets_mock_ws_rule_builder_.mockwsrulebuilder.html" class="tsd-signature-type">MockWsRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_websockets_websocket_rule_builder_.websocketrulebuilder.html" class="tsd-signature-type">WebSocketRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -302,13 +334,13 @@
 					<a name="delete" class="tsd-anchor"></a>
 					<h3>delete</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L180">src/mockttp.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L180">src/mockttp.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,7 +369,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -351,7 +383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L55">src/mockttp.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L55">src/mockttp.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,13 +399,13 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L120">src/mockttp.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L120">src/mockttp.ts:120</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,7 +434,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -416,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L396">src/mockttp.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L406">src/mockttp.ts:406</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,7 +470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L403">src/mockttp.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L413">src/mockttp.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -456,13 +488,13 @@
 					<a name="head" class="tsd-anchor"></a>
 					<h3>head</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L220">src/mockttp.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L220">src/mockttp.ts:220</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +523,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -511,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L267">src/mockttp.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L267">src/mockttp.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -557,7 +589,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L279">src/mockttp.ts:279</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L279">src/mockttp.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -602,7 +634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L291">src/mockttp.ts:291</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L291">src/mockttp.ts:291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -647,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L304">src/mockttp.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L304">src/mockttp.ts:304</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -693,7 +725,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L323">src/mockttp.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L323">src/mockttp.ts:323</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -744,7 +776,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L329">src/mockttp.ts:329</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L329">src/mockttp.ts:329</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -788,7 +820,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L349">src/mockttp.ts:349</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L349">src/mockttp.ts:349</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -843,13 +875,13 @@
 					<a name="options" class="tsd-anchor"></a>
 					<h3>options</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L249">src/mockttp.ts:249</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L249">src/mockttp.ts:249</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -884,7 +916,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -892,13 +924,13 @@
 					<a name="patch" class="tsd-anchor"></a>
 					<h3>patch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">patch<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">patch<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L200">src/mockttp.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L200">src/mockttp.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -927,7 +959,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -935,13 +967,13 @@
 					<a name="post" class="tsd-anchor"></a>
 					<h3>post</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">post<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">post<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L140">src/mockttp.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L140">src/mockttp.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -970,7 +1002,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -978,13 +1010,13 @@
 					<a name="put" class="tsd-anchor"></a>
 					<h3>put</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></li>
+						<li class="tsd-signature tsd-kind-icon">put<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L160">src/mockttp.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L160">src/mockttp.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1013,7 +1045,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> url: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RegExp</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_mock_rule_builder_.mockrulebuilder.html" class="tsd-signature-type">MockRuleBuilder</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_rules_requests_request_rule_builder_.requestrulebuilder.html" class="tsd-signature-type">RequestRuleBuilder</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -1027,7 +1059,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L61">src/mockttp.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L61">src/mockttp.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1041,16 +1073,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setrules" class="tsd-anchor"></a>
-					<h3>set<wbr>Rules</h3>
+					<a name="setrequestrules" class="tsd-anchor"></a>
+					<h3>set<wbr>Request<wbr>Rules</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_mock_rule_.mockruledata.html" class="tsd-signature-type">MockRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Request<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L370">src/mockttp.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L370">src/mockttp.ts:370</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1059,14 +1091,14 @@
 									existing rules (except websocket rules).</p>
 								</div>
 								<p>This API is only useful if you&#39;re manually building rules, rather than
-									using MockRuleBuilder, and is only for special cases. This approach may
+									using RequestRuleBuilder, and is only for special cases. This approach may
 									be necessary if you need to configure all your rules in one place to
 								enable them elsewhere/later.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_mock_rule_.mockruledata.html" class="tsd-signature-type">MockRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1074,16 +1106,46 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="setwsrules" class="tsd-anchor"></a>
-					<h3>set<wbr>WsRules</h3>
+					<a name="setrules" class="tsd-anchor"></a>
+					<h3>set<wbr>Rules</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>WsRules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_websockets_mock_ws_rule_.mockwsruledata.html" class="tsd-signature-type">MockWsRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L391">src/mockttp.ts:391</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L380">src/mockttp.ts:380</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>alias for <code>setRequestRules</code></p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_requests_request_rule_.requestruledata.html" class="tsd-signature-type">RequestRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="setwebsocketrules" class="tsd-anchor"></a>
+					<h3>set<wbr>Web<wbr>Socket<wbr>Rules</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Web<wbr>Socket<wbr>Rules<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>ruleData<span class="tsd-signature-symbol">: </span><a href="_rules_websockets_websocket_rule_.websocketruledata.html" class="tsd-signature-type">WebSocketRuleData</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L401">src/mockttp.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1092,14 +1154,14 @@
 									replacing all existing websocket rules (but leaving normal rules untouched).</p>
 								</div>
 								<p>This API is only useful if you&#39;re manually building rules, rather than
-									using MockRuleBuilder, and is only for special cases. This approach may
+									using RequestRuleBuilder, and is only for special cases. This approach may
 									be necessary if you need to configure all your rules in one place to
 								enable them elsewhere/later.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_websockets_mock_ws_rule_.mockwsruledata.html" class="tsd-signature-type">MockWsRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>ruleData: <a href="_rules_websockets_websocket_rule_.websocketruledata.html" class="tsd-signature-type">WebSocketRuleData</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_.mockedendpoint.html" class="tsd-signature-type">MockedEndpoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1116,7 +1178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L45">src/mockttp.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L45">src/mockttp.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1149,7 +1211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L50">src/mockttp.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L50">src/mockttp.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1171,7 +1233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1a71d6b/src/mockttp.ts#L75">src/mockttp.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/6105778/src/mockttp.ts#L75">src/mockttp.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1220,10 +1282,13 @@
 								<a href="_mockttp_.mockttp.html#url" class="tsd-kind-icon">url</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_mockttp_.mockttp.html#addrequestrules" class="tsd-kind-icon">add<wbr>Request<wbr>Rules</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#addrules" class="tsd-kind-icon">add<wbr>Rules</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_mockttp_.mockttp.html#addwsrules" class="tsd-kind-icon">add<wbr>WsRules</a>
+								<a href="_mockttp_.mockttp.html#addwebsocketrules" class="tsd-kind-icon">add<wbr>Web<wbr>Socket<wbr>Rules</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#anyrequest" class="tsd-kind-icon">any<wbr>Request</a>
@@ -1268,10 +1333,13 @@
 								<a href="_mockttp_.mockttp.html#reset" class="tsd-kind-icon">reset</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_mockttp_.mockttp.html#setrequestrules" class="tsd-kind-icon">set<wbr>Request<wbr>Rules</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#setrules" class="tsd-kind-icon">set<wbr>Rules</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_mockttp_.mockttp.html#setwsrules" class="tsd-kind-icon">set<wbr>WsRules</a>
+								<a href="_mockttp_.mockttp.html#setwebsocketrules" class="tsd-kind-icon">set<wbr>Web<wbr>Socket<wbr>Rules</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_mockttp_.mockttp.html#start" class="tsd-kind-icon">start</a>
