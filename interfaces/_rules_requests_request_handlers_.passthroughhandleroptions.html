@@ -100,9 +100,30 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackrequestresult.html" class="tsd-signature-type">CallbackRequestResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/a23aa4d/src/rules/requests/request-handlers.ts#L402">src/rules/requests/request-handlers.ts:402</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L439">src/rules/requests/request-handlers.ts:439</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A callback that will be passed the full request before it is passed through,
+								and which returns an object that defines how the the request content should
+							be changed before it&#39;s passed to the upstream server.</p>
+						</div>
+						<p>The callback should return an object that definies how the request
+							should be changed. All fields on the object are optional. The possible
+						fields are:</p>
+						<ul>
+							<li><code>method</code> (a replacement HTTP verb, capitalized)</li>
+							<li><code>url</code> (a full URL to send the request to)</li>
+							<li><code>response</code> (a response callback result: if provided this will be used
+								directly, the request will not be passed through at all, and any
+							beforeResponse callback will never fire)</li>
+							<li><code>headers</code> (object with string keys &amp; values, replaces all headers if set)</li>
+							<li><code>body</code> (string or buffer, replaces the body if set)</li>
+							<li><code>json</code> (object, to be sent as a JSON-encoded body, taking precedence
+							over <code>body</code> if both are set)</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="beforeresponse" class="tsd-anchor"></a>
@@ -110,9 +131,26 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>res<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_handlers_.passthroughresponse.html" class="tsd-signature-type">PassThroughResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/a23aa4d/src/rules/requests/request-handlers.ts#L403">src/rules/requests/request-handlers.ts:403</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L456">src/rules/requests/request-handlers.ts:456</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A callback that will be passed the full response before it is passed through,
+								and which returns an object that defines how the the response content should
+							before it&#39;s returned to the client.</p>
+						</div>
+						<p>The callback should return an object that definies how the response
+							should be changed. All fields on the object are optional. The possible
+						fields are:</p>
+						<ul>
+							<li><code>status</code> (number, will replace the HTTP status code)</li>
+							<li><code>headers</code> (object with string keys &amp; values, replaces all headers if set)</li>
+							<li><code>body</code> (string or buffer, replaces the body if set)</li>
+							<li><code>json</code> (object, to be sent as a JSON-encoded body, taking precedence
+							over <code>body</code> if both are set)</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="clientcertificatehostmap" class="tsd-anchor"></a>
@@ -120,9 +158,15 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Certificate<wbr>Host<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/a23aa4d/src/rules/requests/request-handlers.ts#L399">src/rules/requests/request-handlers.ts:399</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L416">src/rules/requests/request-handlers.ts:416</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A mapping of hosts to client certificates to use, in the form of
+							<code>{ key, cert }</code> objects (none, by default)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="forwarding" class="tsd-anchor"></a>
@@ -130,9 +174,18 @@
 					<div class="tsd-signature tsd-kind-icon">forwarding<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-signature-type">ForwardingOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/a23aa4d/src/rules/requests/request-handlers.ts#L397">src/rules/requests/request-handlers.ts:397</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L404">src/rules/requests/request-handlers.ts:404</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The forwarding configuration for the passthrough rule.
+								This generally shouldn&#39;t be used explicitly unless you&#39;re
+								building rule data by hand. Instead, call <code>thenPassThrough</code>
+								to send data directly or <code>thenForwardTo</code> with options to
+							configure traffic forwarding.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="ignorehostcertificateerrors" class="tsd-anchor"></a>
@@ -140,9 +193,15 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/a23aa4d/src/rules/requests/request-handlers.ts#L398">src/rules/requests/request-handlers.ts:398</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L410">src/rules/requests/request-handlers.ts:410</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of hostnames for which server certificate errors should be ignored
+							(none, by default).</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
