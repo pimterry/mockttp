@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CallbackRequestMessage | mockttp</title>
+	<title>PassThroughLookupOptions | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 					<a href="../modules/_rules_requests_request_handlers_.html">&quot;rules/requests/request-handlers&quot;</a>
 				</li>
 				<li>
-					<a href="_rules_requests_request_handlers_.callbackrequestmessage.html">CallbackRequestMessage</a>
+					<a href="_rules_requests_request_handlers_.passthroughlookupoptions.html">PassThroughLookupOptions</a>
 				</li>
 			</ul>
-			<h1>Interface CallbackRequestMessage</h1>
+			<h1>Interface PassThroughLookupOptions</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CallbackRequestMessage</span>
+						<span class="target">PassThroughLookupOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -79,26 +79,69 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_rules_requests_request_handlers_.callbackrequestmessage.html#args" class="tsd-kind-icon">args</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#errorttl" class="tsd-kind-icon">error<wbr>Ttl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#maxttl" class="tsd-kind-icon">max<wbr>Ttl</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#servers" class="tsd-kind-icon">servers</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="args" class="tsd-anchor"></a>
-					<h3>args</h3>
-					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="errorttl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error<wbr>Ttl</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>Ttl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L134">src/rules/requests/request-handlers.ts:134</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L408">src/rules/requests/request-handlers.ts:408</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>How long to cache a DNS ENODATA or ENOTFOUND response. Defaults
+							to 0.15.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxttl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Ttl</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Ttl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L403">src/rules/requests/request-handlers.ts:403</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The maximum time to cache a DNS response. Up to this limit,
+								responses will be cached according to their own TTL. Defaults
+							to Infinity.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="servers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> servers</h3>
+					<div class="tsd-signature tsd-kind-icon">servers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L416">src/rules/requests/request-handlers.ts:416</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The primary servers to use. DNS queries will be resolved against
+								these servers first. If no data is available, queries will fall
+							back to dns.lookup, and use the OS&#39;s default DNS servers.</p>
+						</div>
+						<p>This defaults to dns.getServers().</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -117,11 +160,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_rules_requests_request_handlers_.callbackrequestmessage.html" class="tsd-kind-icon">Callback<wbr>Request<wbr>Message</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_rules_requests_request_handlers_.passthroughlookupoptions.html" class="tsd-kind-icon">Pass<wbr>Through<wbr>Lookup<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_rules_requests_request_handlers_.callbackrequestmessage.html#args" class="tsd-kind-icon">args</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#errorttl" class="tsd-kind-icon">error<wbr>Ttl</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#maxttl" class="tsd-kind-icon">max<wbr>Ttl</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_requests_request_handlers_.passthroughlookupoptions.html#servers" class="tsd-kind-icon">servers</a>
 							</li>
 						</ul>
 					</li>

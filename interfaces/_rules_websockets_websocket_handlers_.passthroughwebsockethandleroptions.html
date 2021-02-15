@@ -84,6 +84,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_websockets_websocket_handlers_.passthroughwebsockethandleroptions.html#forwarding" class="tsd-kind-icon">forwarding</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_websockets_websocket_handlers_.passthroughwebsockethandleroptions.html#ignorehostcertificateerrors" class="tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_websockets_websocket_handlers_.passthroughwebsockethandleroptions.html#lookupoptions" class="tsd-kind-icon">lookup<wbr>Options</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,9 +98,18 @@
 					<div class="tsd-signature tsd-kind-icon">forwarding<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-signature-type">ForwardingOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/websockets/websocket-handlers.ts#L101">src/rules/websockets/websocket-handlers.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/websockets/websocket-handlers.ts#L110">src/rules/websockets/websocket-handlers.ts:110</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The forwarding configuration for the passthrough rule.
+								This generally shouldn&#39;t be used explicitly unless you&#39;re
+								building rule data by hand. Instead, call <code>thenPassThrough</code>
+								to send data directly or <code>thenForwardTo</code> with options to
+							configure traffic forwarding.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="ignorehostcertificateerrors" class="tsd-anchor"></a>
@@ -107,9 +117,33 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/websockets/websocket-handlers.ts#L102">src/rules/websockets/websocket-handlers.ts:102</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/websockets/websocket-handlers.ts#L116">src/rules/websockets/websocket-handlers.ts:116</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of hostnames for which server certificate errors should be
+							ignored (none, by default).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lookupoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> lookup<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">lookup<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.passthroughlookupoptions.html" class="tsd-signature-type">PassThroughLookupOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/websockets/websocket-handlers.ts#L124">src/rules/websockets/websocket-handlers.ts:124</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Custom DNS options, to allow configuration of the resolver used
+								when forwarding requests upstream. Passing any option switches
+								from using node&#39;s default dns.lookup function to using the
+							cacheable-lookup module, which will cache responses.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -142,6 +176,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_rules_websockets_websocket_handlers_.passthroughwebsockethandleroptions.html#ignorehostcertificateerrors" class="tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_websockets_websocket_handlers_.passthroughwebsockethandleroptions.html#lookupoptions" class="tsd-kind-icon">lookup<wbr>Options</a>
 							</li>
 						</ul>
 					</li>

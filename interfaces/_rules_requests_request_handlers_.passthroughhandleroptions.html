@@ -87,6 +87,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#clientcertificatehostmap" class="tsd-kind-icon">client<wbr>Certificate<wbr>Host<wbr>Map</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#forwarding" class="tsd-kind-icon">forwarding</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#ignorehostcertificateerrors" class="tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#lookupoptions" class="tsd-kind-icon">lookup<wbr>Options</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,7 +101,7 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackrequestresult.html" class="tsd-signature-type">CallbackRequestResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L439">src/rules/requests/request-handlers.ts:439</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L470">src/rules/requests/request-handlers.ts:470</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>res<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_handlers_.passthroughresponse.html" class="tsd-signature-type">PassThroughResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L456">src/rules/requests/request-handlers.ts:456</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L487">src/rules/requests/request-handlers.ts:487</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Certificate<wbr>Host<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L416">src/rules/requests/request-handlers.ts:416</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L439">src/rules/requests/request-handlers.ts:439</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">forwarding<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-signature-type">ForwardingOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L404">src/rules/requests/request-handlers.ts:404</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L427">src/rules/requests/request-handlers.ts:427</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,13 +194,31 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/0f880e4/src/rules/requests/request-handlers.ts#L410">src/rules/requests/request-handlers.ts:410</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L433">src/rules/requests/request-handlers.ts:433</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>A list of hostnames for which server certificate errors should be ignored
 							(none, by default).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lookupoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> lookup<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">lookup<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.passthroughlookupoptions.html" class="tsd-signature-type">PassThroughLookupOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/1e64c85/src/rules/requests/request-handlers.ts#L449">src/rules/requests/request-handlers.ts:449</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Custom DNS options, to allow configuration of the resolver used
+								when forwarding requests upstream. Passing any option switches
+								from using node&#39;s default dns.lookup function to using the
+							cacheable-lookup module, which will cache responses.</p>
 						</div>
 					</div>
 				</section>
@@ -237,6 +256,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#ignorehostcertificateerrors" class="tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#lookupoptions" class="tsd-kind-icon">lookup<wbr>Options</a>
 							</li>
 						</ul>
 					</li>
