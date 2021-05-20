@@ -93,13 +93,14 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#geturlwithoutprotocol" class="tsd-kind-icon">get<wbr>Url<wbr>Without<wbr>Protocol</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#h1headerstoh2" class="tsd-kind-icon">h1<wbr>Headers<wbr>ToH2</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#h2headerstoh1" class="tsd-kind-icon">h2<wbr>Headers<wbr>ToH1</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#handlecontentencoding" class="tsd-kind-icon">handle<wbr>Content<wbr>Encoding</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#isabsoluteprotocollessurl" class="tsd-kind-icon">is<wbr>Absolute<wbr>Protocolless<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#isabsoluteurl" class="tsd-kind-icon">is<wbr>Absolute<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#ishttp2" class="tsd-kind-icon">is<wbr>Http2</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#ismockttpbody" class="tsd-kind-icon">is<wbr>Mockttp<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#isrelativeurl" class="tsd-kind-icon">is<wbr>Relative<wbr>Url</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_util_request_utils_.html#parsebodystream" class="tsd-kind-icon">parse<wbr>Body<wbr>Stream</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#parserequestbody" class="tsd-kind-icon">parse<wbr>Request<wbr>Body</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_util_request_utils_.html#runasyncorundefined" class="tsd-kind-icon">run<wbr>Async<wbr>OrUndefined</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_util_request_utils_.html#runorundefined" class="tsd-kind-icon">run<wbr>OrUndefined</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#setheaders" class="tsd-kind-icon">set<wbr>Headers</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_util_request_utils_.html#shouldkeepalive" class="tsd-kind-icon">should<wbr>Keep<wbr>Alive</a></li>
@@ -121,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Partially<wbr>Parsed<wbr>Http<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>headers<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_types_.headers.html" class="tsd-signature-type">Headers</a><span class="tsd-signature-symbol">; </span>hostname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>httpVersion<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>method<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>path<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>protocol<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>url<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L483">src/util/request-utils.ts:483</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L488">src/util/request-utils.ts:488</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -160,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">HTTP2_<wbr>ILLEGAL_<wbr>HEADERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;connection&#x27;,&#x27;upgrade&#x27;,&#x27;host&#x27;,&#x27;http2-settings&#x27;,&#x27;keep-alive&#x27;,&#x27;proxy-connection&#x27;,&#x27;transfer-encoding&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L120">src/util/request-utils.ts:120</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L119">src/util/request-utils.ts:119</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -170,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">now<span class="tsd-signature-symbol">:</span> <a href="_util_request_utils_.html#now" class="tsd-signature-type">now</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L14">src/util/request-utils.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L12">src/util/request-utils.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -187,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L296">src/util/request-utils.ts:296</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L301">src/util/request-utils.ts:301</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,7 +217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L220">src/util/request-utils.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L198">src/util/request-utils.ts:198</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -242,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L273">src/util/request-utils.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L278">src/util/request-utils.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -271,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L261">src/util/request-utils.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L266">src/util/request-utils.ts:266</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L80">src/util/request-utils.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L79">src/util/request-utils.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -326,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L55">src/util/request-utils.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L54">src/util/request-utils.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -349,7 +350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L51">src/util/request-utils.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L50">src/util/request-utils.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -372,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L130">src/util/request-utils.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L129">src/util/request-utils.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -395,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L103">src/util/request-utils.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L102">src/util/request-utils.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -409,32 +410,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="handlecontentencoding" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> handle<wbr>Content<wbr>Encoding</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">handle<wbr>Content<wbr>Encoding<span class="tsd-signature-symbol">(</span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span>, encoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L187">src/util/request-utils.ts:187</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>body: <span class="tsd-signature-type">Buffer</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> encoding: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isabsoluteprotocollessurl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Absolute<wbr>Protocolless<wbr>Url</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -444,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L48">src/util/request-utils.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L47">src/util/request-utils.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -467,7 +442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L41">src/util/request-utils.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L40">src/util/request-utils.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -490,7 +465,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L92">src/util/request-utils.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L91">src/util/request-utils.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -504,6 +479,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="ismockttpbody" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Mockttp<wbr>Body</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Mockttp<wbr>Body<span class="tsd-signature-symbol">(</span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">body</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">CompletedBody</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L194">src/util/request-utils.ts:194</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>body: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">body</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">CompletedBody</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isrelativeurl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> is<wbr>Relative<wbr>Url</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -513,7 +511,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L45">src/util/request-utils.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L44">src/util/request-utils.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -536,7 +534,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L136">src/util/request-utils.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L135">src/util/request-utils.ts:135</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -562,7 +560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L248">src/util/request-utils.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L253">src/util/request-utils.ts:253</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -584,6 +582,47 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+					<a name="runasyncorundefined" class="tsd-anchor"></a>
+					<h3>run<wbr>Async<wbr>OrUndefined</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Async<wbr>OrUndefined&lt;R&gt;<span class="tsd-signature-symbol">(</span>func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L181">src/util/request-utils.ts:181</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>R</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>func: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 					<a name="runorundefined" class="tsd-anchor"></a>
 					<h3>run<wbr>OrUndefined</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
@@ -593,7 +632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L174">src/util/request-utils.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L173">src/util/request-utils.ts:173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -634,7 +673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L69">src/util/request-utils.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L68">src/util/request-utils.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -660,7 +699,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L64">src/util/request-utils.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L63">src/util/request-utils.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -683,7 +722,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L317">src/util/request-utils.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L322">src/util/request-utils.ts:322</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -720,7 +759,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L406">src/util/request-utils.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L411">src/util/request-utils.ts:411</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -746,7 +785,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L182">src/util/request-utils.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L189">src/util/request-utils.ts:189</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -772,7 +811,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L309">src/util/request-utils.ts:309</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L314">src/util/request-utils.ts:314</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -801,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/util/request-utils.ts#L388">src/util/request-utils.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/request-utils.ts#L393">src/util/request-utils.ts:393</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,9 +911,6 @@
 						<a href="_util_request_utils_.html#h2headerstoh1" class="tsd-kind-icon">h2<wbr>Headers<wbr>ToH1</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_util_request_utils_.html#handlecontentencoding" class="tsd-kind-icon">handle<wbr>Content<wbr>Encoding</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_request_utils_.html#isabsoluteprotocollessurl" class="tsd-kind-icon">is<wbr>Absolute<wbr>Protocolless<wbr>Url</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -884,6 +920,9 @@
 						<a href="_util_request_utils_.html#ishttp2" class="tsd-kind-icon">is<wbr>Http2</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_util_request_utils_.html#ismockttpbody" class="tsd-kind-icon">is<wbr>Mockttp<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_request_utils_.html#isrelativeurl" class="tsd-kind-icon">is<wbr>Relative<wbr>Url</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
@@ -891,6 +930,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_util_request_utils_.html#parserequestbody" class="tsd-kind-icon">parse<wbr>Request<wbr>Body</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="_util_request_utils_.html#runasyncorundefined" class="tsd-kind-icon">run<wbr>Async<wbr>OrUndefined</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="_util_request_utils_.html#runorundefined" class="tsd-kind-icon">run<wbr>OrUndefined</a>

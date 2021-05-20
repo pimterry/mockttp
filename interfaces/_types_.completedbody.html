@@ -89,6 +89,15 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_types_.completedbody.html#text" class="tsd-kind-icon">text</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_types_.completedbody.html#getdecodedbuffer" class="tsd-kind-icon">get<wbr>Decoded<wbr>Buffer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_types_.completedbody.html#getformdata" class="tsd-kind-icon">get<wbr>Form<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_types_.completedbody.html#getjson" class="tsd-kind-icon">get<wbr>Json</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_types_.completedbody.html#gettext" class="tsd-kind-icon">get<wbr>Text</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -100,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/types.ts#L94">src/types.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L94">src/types.ts:94</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -110,9 +119,17 @@
 					<div class="tsd-signature tsd-kind-icon">decoded<wbr>Buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/types.ts#L95">src/types.ts:95</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L100">src/types.ts:100</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Use <code>getDecodedBuffer()</code> instead with promises, to support
+								more encodings and improve performance.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="formdata" class="tsd-anchor"></a>
@@ -120,9 +137,17 @@
 					<div class="tsd-signature tsd-kind-icon">form<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/types.ts#L98">src/types.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L121">src/types.ts:121</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Use <code>getDecodedBuffer()</code> instead with promises, to support
+								more encodings and improve performance.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="json" class="tsd-anchor"></a>
@@ -130,9 +155,17 @@
 					<div class="tsd-signature tsd-kind-icon">json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/types.ts#L97">src/types.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L114">src/types.ts:114</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Use <code>getJson()</code> instead with promises, to support
+								more encodings and improve performance.</p>
+							</dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="text" class="tsd-anchor"></a>
@@ -140,9 +173,88 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/65c32a5/src/types.ts#L96">src/types.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L107">src/types.ts:107</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>deprecated</dt>
+							<dd><p>Use <code>getText()</code> instead with promises, to support
+								more encodings and improve performance.</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getdecodedbuffer" class="tsd-anchor"></a>
+					<h3>get<wbr>Decoded<wbr>Buffer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Decoded<wbr>Buffer<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L101">src/types.ts:101</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getformdata" class="tsd-anchor"></a>
+					<h3>get<wbr>Form<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Form<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L122">src/types.ts:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getjson" class="tsd-anchor"></a>
+					<h3>get<wbr>Json</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Json<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L115">src/types.ts:115</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="gettext" class="tsd-anchor"></a>
+					<h3>get<wbr>Text</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Text<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L108">src/types.ts:108</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -184,6 +296,18 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_types_.completedbody.html#text" class="tsd-kind-icon">text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_types_.completedbody.html#getdecodedbuffer" class="tsd-kind-icon">get<wbr>Decoded<wbr>Buffer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_types_.completedbody.html#getformdata" class="tsd-kind-icon">get<wbr>Form<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_types_.completedbody.html#getjson" class="tsd-kind-icon">get<wbr>Json</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_types_.completedbody.html#gettext" class="tsd-kind-icon">get<wbr>Text</a>
 							</li>
 						</ul>
 					</li>
