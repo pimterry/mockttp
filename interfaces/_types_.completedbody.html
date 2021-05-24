@@ -109,9 +109,15 @@
 					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L94">src/types.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L98">src/types.ts:98</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The raw bytes of the response. If a content encoding was used, this is
+							the raw encoded data.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="decodedbuffer" class="tsd-anchor"></a>
@@ -119,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">decoded<wbr>Buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L100">src/types.ts:100</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L104">src/types.ts:104</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">form<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L121">src/types.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L142">src/types.ts:142</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L114">src/types.ts:114</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L129">src/types.ts:129</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L107">src/types.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L117">src/types.ts:117</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,9 +204,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L101">src/types.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L111">src/types.ts:111</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The decoded bytes of the response. If no encoding was used, this is the
+										same as <code>.buffer</code>. The response is decoded and returned asynchronously
+									as a Promise.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -215,9 +228,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L122">src/types.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L149">src/types.ts:149</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The contents of the response, decoded, parsed as UTF-8 string, and
+										then parsed form-encoded data. The response is decoded and returned
+									asynchronously as a Promise.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -232,9 +252,16 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L115">src/types.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L136">src/types.ts:136</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The contents of the response, decoded, parsed as UTF-8 string, and
+										then parsed a JSON. The response is decoded and returned asynchronously
+									as a Promise.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -249,9 +276,15 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/types.ts#L108">src/types.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/b395802/src/types.ts#L123">src/types.ts:123</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The contents of the response, decoded and parsed as a UTF-8 string.
+									The response is decoded and returned asynchronously as a Promise.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
