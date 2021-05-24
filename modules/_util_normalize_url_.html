@@ -86,7 +86,7 @@
 					<div class="tsd-signature tsd-kind-icon">legacy<wbr>Normalize<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((url: string): string &#x3D;&gt;normalize(url, {stripWWW: false,removeTrailingSlash: false,removeQueryParameters: [/.*/],}))</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/923af02/src/util/normalize-url.ts#L13">src/util/normalize-url.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/normalize-url.ts#L13">src/util/normalize-url.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -96,7 +96,7 @@
 					<div class="tsd-signature tsd-kind-icon">normalize<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">(Anonymous function)</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">MemoizedFunction</span><span class="tsd-signature-symbol"> = _.memoize((urlInput: string): string &#x3D;&gt; {let parsedUrl: url.UrlWithStringQuery | undefined;let isProtocolless &#x3D; false;try {// Strip the query and anything following itconst queryIndex &#x3D; urlInput.indexOf(&#x27;?&#x27;);if (queryIndex !&#x3D;&#x3D; -1) {urlInput &#x3D; urlInput.slice(0, queryIndex);}if (isAbsoluteProtocollessUrl(urlInput)) {parsedUrl &#x3D; url.parse(&#x27;http://&#x27; + urlInput);isProtocolless &#x3D; true;} else {parsedUrl &#x3D; url.parse(urlInput);}// Trim out lots of the bits we don&#x27;t like:delete parsedUrl.host;delete parsedUrl.query;delete parsedUrl.search;delete parsedUrl.hash;if (parsedUrl.pathname) {parsedUrl.pathname &#x3D; parsedUrl.pathname.replace(/\%[A-Fa-z0-9]{2}/g,(encoded) &#x3D;&gt; encoded.toUpperCase()).replace(/[^\u0000-\u007F]+/g,(unicodeChar) &#x3D;&gt; encodeURIComponent(unicodeChar));}if (parsedUrl.hostname &amp;&amp; parsedUrl.hostname.endsWith(&#x27;.&#x27;)) {parsedUrl.hostname &#x3D; parsedUrl.hostname.slice(0, -1);}if ((parsedUrl.protocol &#x3D;&#x3D;&#x3D; &#x27;https:&#x27; &amp;&amp; parsedUrl.port &#x3D;&#x3D;&#x3D; &#x27;443&#x27;) ||(parsedUrl.protocol &#x3D;&#x3D;&#x3D; &#x27;http:&#x27; &amp;&amp; parsedUrl.port &#x3D;&#x3D;&#x3D; &#x27;80&#x27;)) {delete parsedUrl.port;}} catch (e) {console.log(&#x60;Failed to normalize URL ${urlInput}&#x60;);console.log(e);if (!parsedUrl) return urlInput; // Totally unparseble: use as-is// If we&#x27;ve successfully parsed it, we format what we managed// and leave it at that:}let normalizedUrl &#x3D; url.format(parsedUrl);// If the URL came in with no protocol, it should leave with// no protocol (protocol added temporarily above to allow parsing)if (isProtocolless) {normalizedUrl &#x3D; normalizedUrl.slice(&#x27;http://&#x27;.length);}return normalizedUrl;})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/923af02/src/util/normalize-url.ts#L29">src/util/normalize-url.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/98164ce/src/util/normalize-url.ts#L29">src/util/normalize-url.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
