@@ -90,6 +90,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#ignorehosthttpserrors" class="tsd-kind-icon">ignore<wbr>Host<wbr>Https<wbr>Errors</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#lookupoptions" class="tsd-kind-icon">lookup<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#transformrequest" class="tsd-kind-icon">transform<wbr>Request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#transformresponse" class="tsd-kind-icon">transform<wbr>Response</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><a href="_types_.completedrequest.html" class="tsd-signature-type">CompletedRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackrequestresult.html" class="tsd-signature-type">CallbackRequestResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L511">src/rules/requests/request-handlers.ts:511</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L526">src/rules/requests/request-handlers.ts:526</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>res<span class="tsd-signature-symbol">: </span><a href="_rules_requests_request_handlers_.passthroughresponse.html" class="tsd-signature-type">PassThroughResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../modules/_util_type_utils_.html#maybepromise" class="tsd-signature-type">MaybePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L528">src/rules/requests/request-handlers.ts:528</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L543">src/rules/requests/request-handlers.ts:543</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -161,7 +162,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Certificate<wbr>Host<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L465">src/rules/requests/request-handlers.ts:465</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L465">src/rules/requests/request-handlers.ts:465</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">forwarding<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-signature-type">ForwardingOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L447">src/rules/requests/request-handlers.ts:447</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L447">src/rules/requests/request-handlers.ts:447</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Host<wbr>Certificate<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L459">src/rules/requests/request-handlers.ts:459</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L459">src/rules/requests/request-handlers.ts:459</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<wbr>Host<wbr>Https<wbr>Errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L453">src/rules/requests/request-handlers.ts:453</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L453">src/rules/requests/request-handlers.ts:453</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">lookup<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.passthroughlookupoptions.html" class="tsd-signature-type">PassThroughLookupOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L475">src/rules/requests/request-handlers.ts:475</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L475">src/rules/requests/request-handlers.ts:475</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -249,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">transform<wbr>Request<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.requesttransform.html" class="tsd-signature-type">RequestTransform</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e6929dd/src/rules/requests/request-handlers.ts#L490">src/rules/requests/request-handlers.ts:490</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L490">src/rules/requests/request-handlers.ts:490</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -262,6 +263,29 @@
 							and can be more performant. The two options are mutually exclusive: you cannot
 						use both transformRequest and a beforeRequest callback.</p>
 						<p>Only one transformation for each target (method, headers &amp; body) can be
+							specified. If more than one is specified then an error will be thrown when the
+						rule is registered.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="transformresponse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transform<wbr>Response</h3>
+					<div class="tsd-signature tsd-kind-icon">transform<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="_rules_requests_request_handlers_.responsetransform.html" class="tsd-signature-type">ResponseTransform</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/e98db27/src/rules/requests/request-handlers.ts#L505">src/rules/requests/request-handlers.ts:505</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A set of data to automatically transform a response. This includes properties
+							to support many transformation common use cases.</p>
+						</div>
+						<p>For advanced cases, a custom callback using beforeResponse can be used instead.
+							Using this field however where possible is typically simpler, more declarative,
+							and can be more performant. The two options are mutually exclusive: you cannot
+						use both transformResponse and a beforeResponse callback.</p>
+						<p>Only one transformation for each target (status, headers &amp; body) can be
 							specified. If more than one is specified then an error will be thrown when the
 						rule is registered.</p>
 					</div>
@@ -309,6 +333,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#transformrequest" class="tsd-kind-icon">transform<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_rules_requests_request_handlers_.passthroughhandleroptions.html#transformresponse" class="tsd-kind-icon">transform<wbr>Response</a>
 							</li>
 						</ul>
 					</li>
