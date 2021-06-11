@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MockServerConfig | mockttp</title>
+	<title>ProxyConfig | mockttp</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,13 +54,13 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_standalone_mockttp_standalone_.html">&quot;standalone/mockttp-standalone&quot;</a>
+					<a href="../modules/_util_http_agents_.html">&quot;util/http-agents&quot;</a>
 				</li>
 				<li>
-					<a href="_standalone_mockttp_standalone_.mockserverconfig.html">MockServerConfig</a>
+					<a href="_util_http_agents_.proxyconfig.html">ProxyConfig</a>
 				</li>
 			</ul>
-			<h1>Interface MockServerConfig</h1>
+			<h1>Interface ProxyConfig</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MockServerConfig</span>
+						<span class="target">ProxyConfig</span>
 					</li>
 				</ul>
 			</section>
@@ -82,8 +82,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_standalone_mockttp_standalone_.mockserverconfig.html#mockroot" class="tsd-kind-icon">mock<wbr>Root</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_standalone_mockttp_standalone_.mockserverconfig.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_util_http_agents_.proxyconfig.html#noproxy" class="tsd-kind-icon">no<wbr>Proxy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_util_http_agents_.proxyconfig.html#proxyurl" class="tsd-kind-icon">proxy<wbr>Url</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,24 +92,50 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mockroot" class="tsd-anchor"></a>
-					<h3>mock<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">mock<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="noproxy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Proxy</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Proxy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/dfbb1f6/src/standalone/mockttp-standalone.ts#L323">src/standalone/mockttp-standalone.ts:323</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/dfbb1f6/src/util/http-agents.ts#L44">src/util/http-agents.ts:44</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of no-proxy values, matching hosts&#39; traffic should <em>not</em> be proxied.</p>
+						</div>
+						<p>This is a common proxy feature, but unfortunately isn&#39;t standardized. See
+							<a href="https://about.gitlab.com/blog/2021/01/27/we-need-to-talk-no-proxy/">https://about.gitlab.com/blog/2021/01/27/we-need-to-talk-no-proxy/</a> for some
+							background. This implementation is intended to match Curl&#39;s behaviour, and
+						any differences are a bug.</p>
+						<p>The currently supported formats are:</p>
+						<ul>
+							<li>example.com (matches domain and all subdomains)</li>
+							<li>example.com:443 (matches domain and all subdomains, but only on that port)</li>
+							<li>10.0.0.1 (matches IP, but only when used directly - does not resolve domains)</li>
+						</ul>
+						<p>Some other formats (e.g. leading dots or *.) will work, but the leading
+							characters are ignored. More formats may be added in future, e.g. CIDR ranges.
+							To maximize compatibility with values used elsewhere, unrecognized formats
+						will generally be ignored, but may match in unexpected ways.</p>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3>port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="proxyurl" class="tsd-anchor"></a>
+					<h3>proxy<wbr>Url</h3>
+					<div class="tsd-signature tsd-kind-icon">proxy<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/dfbb1f6/src/standalone/mockttp-standalone.ts#L322">src/standalone/mockttp-standalone.ts:322</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/dfbb1f6/src/util/http-agents.ts#L24">src/util/http-agents.ts:24</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The URL for the proxy to forward traffic through.</p>
+						</div>
+						<p>This can be any URL supported by <a href="https://www.npmjs.com/package/proxy-agent">https://www.npmjs.com/package/proxy-agent</a>.
+						For example: http://..., socks5://..., pac+http://...</p>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -120,44 +146,38 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_standalone_mockttp_standalone_.html">&quot;standalone/mockttp-<wbr>standalone&quot;</a>
+						<a href="../modules/_util_http_agents_.html">&quot;util/http-<wbr>agents&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_standalone_mockttp_standalone_.mockttpstandalone.html" class="tsd-kind-icon">Mockttp<wbr>Standalone</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_standalone_mockttp_standalone_.mockserverconfig.html" class="tsd-kind-icon">Mock<wbr>Server<wbr>Config</a>
+						<a href="_util_http_agents_.proxyconfig.html" class="tsd-kind-icon">Proxy<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_standalone_mockttp_standalone_.mockserverconfig.html#mockroot" class="tsd-kind-icon">mock<wbr>Root</a>
+								<a href="_util_http_agents_.proxyconfig.html#noproxy" class="tsd-kind-icon">no<wbr>Proxy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_standalone_mockttp_standalone_.mockserverconfig.html#port" class="tsd-kind-icon">port</a>
+								<a href="_util_http_agents_.proxyconfig.html#proxyurl" class="tsd-kind-icon">proxy<wbr>Url</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_standalone_mockttp_standalone_.standaloneserveroptions.html" class="tsd-kind-icon">Standalone<wbr>Server<wbr>Options</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_util_http_agents_.html#keepaliveagents" class="tsd-kind-icon">Keep<wbr>Alive<wbr>Agents</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_standalone_mockttp_standalone_.html#duplexpair" class="tsd-kind-icon">Duplex<wbr>Pair</a>
+						<a href="../modules/_util_http_agents_.html#proxyagent" class="tsd-kind-icon">Proxy<wbr>Agent</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_standalone_mockttp_standalone_.html#connectwebsocketstream" class="tsd-kind-icon">connect<wbr>Web<wbr>Socket<wbr>Stream</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_util_http_agents_.html#getagent" class="tsd-kind-icon">get<wbr>Agent</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_standalone_mockttp_standalone_.html#corsgate" class="tsd-kind-icon">cors<wbr>Gate</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_standalone_mockttp_standalone_.html#strictoriginmatch" class="tsd-kind-icon">strict<wbr>Origin<wbr>Match</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_util_http_agents_.html#matchesnoproxy" class="tsd-kind-icon">matches<wbr>NoProxy</a>
 					</li>
 				</ul>
 			</nav>
