@@ -88,7 +88,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_rules_requests_request_handlers_.beforepassthroughresponserequest.html" class="tsd-kind-icon">Before<wbr>Passthrough<wbr>Response<wbr>Request</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_rules_requests_request_handlers_.callbackrequestmessage.html" class="tsd-kind-icon">Callback<wbr>Request<wbr>Message</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.callbackrequestresult.html" class="tsd-kind-icon">Callback<wbr>Request<wbr>Result</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-kind-icon">Callback<wbr>Response<wbr>Result</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.callbackresponsemessageresult.html" class="tsd-kind-icon">Callback<wbr>Response<wbr>Message<wbr>Result</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-kind-icon">Forwarding<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.passthroughhandleroptions.html" class="tsd-kind-icon">Pass<wbr>Through<wbr>Handler<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_rules_requests_request_handlers_.passthroughlookupoptions.html" class="tsd-kind-icon">Pass<wbr>Through<wbr>Lookup<wbr>Options</a></li>
@@ -105,6 +105,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_rules_requests_request_handlers_.html#callbackresponseresult" class="tsd-kind-icon">Callback<wbr>Response<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_rules_requests_request_handlers_.html#serializedbuffer" class="tsd-kind-icon">Serialized<wbr>Buffer</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_rules_requests_request_handlers_.html#streamhandlereventmessage" class="tsd-kind-icon">Stream<wbr>Handler<wbr>Event<wbr>Message</a></li>
 							</ul>
@@ -151,12 +152,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="callbackresponseresult" class="tsd-anchor"></a>
+					<h3>Callback<wbr>Response<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Callback<wbr>Response<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_rules_requests_request_handlers_.callbackresponsemessageresult.html" class="tsd-signature-type">CallbackResponseMessageResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"close"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L77">src/rules/requests/request-handlers.ts:77</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="serializedbuffer" class="tsd-anchor"></a>
 					<h3>Serialized<wbr>Buffer</h3>
 					<div class="tsd-signature tsd-kind-icon">Serialized<wbr>Buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"Buffer"</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L64">src/rules/requests/request-handlers.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L64">src/rules/requests/request-handlers.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -177,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">Stream<wbr>Handler<wbr>Event<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"buffer"</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"arraybuffer"</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"nil"</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L261">src/rules/requests/request-handlers.ts:261</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L265">src/rules/requests/request-handlers.ts:265</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -190,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">OMIT_<wbr>SYMBOL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> = Symbol(&#x27;omit-value&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L872">src/rules/requests/request-handlers.ts:872</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L878">src/rules/requests/request-handlers.ts:878</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -200,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">OVERRIDABLE_<wbr>REQUEST_<wbr>PSEUDOHEADERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">":authority"</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">":scheme"</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = [&#x27;:authority&#x27;,&#x27;:scheme&#x27;] as const</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L765">src/rules/requests/request-handlers.ts:765</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L771">src/rules/requests/request-handlers.ts:771</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">SERIALIZED_<wbr>OMIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"__mockttp__transform__omit__"</span><span class="tsd-signature-symbol"> = &quot;__mockttp__transform__omit__&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L873">src/rules/requests/request-handlers.ts:873</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L879">src/rules/requests/request-handlers.ts:879</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">_<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LoDashStatic</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L5">src/rules/requests/request-handlers.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L5">src/rules/requests/request-handlers.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -230,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;http&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L9">src/rules/requests/request-handlers.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L9">src/rules/requests/request-handlers.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -240,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">http2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;http2&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L10">src/rules/requests/request-handlers.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L10">src/rules/requests/request-handlers.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,7 +261,7 @@
 					<div class="tsd-signature tsd-kind-icon">https<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;https&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L11">src/rules/requests/request-handlers.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L11">src/rules/requests/request-handlers.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -260,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">net<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;net&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L7">src/rules/requests/request-handlers.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L7">src/rules/requests/request-handlers.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">tls<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;tls&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L8">src/rules/requests/request-handlers.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L8">src/rules/requests/request-handlers.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -280,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;url&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L6">src/rules/requests/request-handlers.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L6">src/rules/requests/request-handlers.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +308,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L700">src/rules/requests/request-handlers.ts:700</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L706">src/rules/requests/request-handlers.ts:706</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -326,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L705">src/rules/requests/request-handlers.ts:705</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L711">src/rules/requests/request-handlers.ts:711</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -349,7 +360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L797">src/rules/requests/request-handlers.ts:797</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L803">src/rules/requests/request-handlers.ts:803</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -381,7 +392,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L752">src/rules/requests/request-handlers.ts:752</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L758">src/rules/requests/request-handlers.ts:758</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -410,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L773">src/rules/requests/request-handlers.ts:773</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L779">src/rules/requests/request-handlers.ts:779</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -441,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L722">src/rules/requests/request-handlers.ts:722</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L728">src/rules/requests/request-handlers.ts:728</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -473,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L87">src/rules/requests/request-handlers.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L91">src/rules/requests/request-handlers.ts:91</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -496,7 +507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L877">src/rules/requests/request-handlers.ts:877</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L883">src/rules/requests/request-handlers.ts:883</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -527,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L844">src/rules/requests/request-handlers.ts:844</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L850">src/rules/requests/request-handlers.ts:850</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -550,19 +561,19 @@
 					<a name="writeresponsefromcallback" class="tsd-anchor"></a>
 					<h3>write<wbr>Response<wbr>From<wbr>Callback</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">write<wbr>Response<wbr>From<wbr>Callback<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">write<wbr>Response<wbr>From<wbr>Callback<span class="tsd-signature-symbol">(</span>result<span class="tsd-signature-symbol">: </span><a href="../interfaces/_rules_requests_request_handlers_.callbackresponsemessageresult.html" class="tsd-signature-type">CallbackResponseMessageResult</a>, response<span class="tsd-signature-symbol">: </span><a href="../interfaces/_types_.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L145">src/rules/requests/request-handlers.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L149">src/rules/requests/request-handlers.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>result: <a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-signature-type">CallbackResponseResult</a></h5>
+									<h5>result: <a href="../interfaces/_rules_requests_request_handlers_.callbackresponsemessageresult.html" class="tsd-signature-type">CallbackResponseMessageResult</a></h5>
 								</li>
 								<li>
 									<h5>response: <a href="../interfaces/_types_.ongoingresponse.html" class="tsd-signature-type">OngoingResponse</a></h5>
@@ -581,7 +592,7 @@
 					<div class="tsd-signature tsd-kind-icon">Handler<wbr>Lookup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1701">src/rules/requests/request-handlers.ts:1701</a></li>
+							<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1729">src/rules/requests/request-handlers.ts:1729</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
@@ -590,7 +601,7 @@
 						<div class="tsd-signature tsd-kind-icon">callback<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.callbackhandler.html" class="tsd-signature-type">CallbackHandler</a><span class="tsd-signature-symbol"> = CallbackHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1703">src/rules/requests/request-handlers.ts:1703</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1731">src/rules/requests/request-handlers.ts:1731</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -600,7 +611,7 @@
 						<div class="tsd-signature tsd-kind-icon">close-<wbr>connection<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.closeconnectionhandler.html" class="tsd-signature-type">CloseConnectionHandler</a><span class="tsd-signature-symbol"> = CloseConnectionHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1707">src/rules/requests/request-handlers.ts:1707</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1735">src/rules/requests/request-handlers.ts:1735</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -610,7 +621,7 @@
 						<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.filehandler.html" class="tsd-signature-type">FileHandler</a><span class="tsd-signature-symbol"> = FileHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1705">src/rules/requests/request-handlers.ts:1705</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1733">src/rules/requests/request-handlers.ts:1733</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -620,7 +631,7 @@
 						<div class="tsd-signature tsd-kind-icon">passthrough<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.passthroughhandler.html" class="tsd-signature-type">PassThroughHandler</a><span class="tsd-signature-symbol"> = PassThroughHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1706">src/rules/requests/request-handlers.ts:1706</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1734">src/rules/requests/request-handlers.ts:1734</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -630,7 +641,7 @@
 						<div class="tsd-signature tsd-kind-icon">simple<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.simplehandler.html" class="tsd-signature-type">SimpleHandler</a><span class="tsd-signature-symbol"> = SimpleHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1702">src/rules/requests/request-handlers.ts:1702</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1730">src/rules/requests/request-handlers.ts:1730</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -640,7 +651,7 @@
 						<div class="tsd-signature tsd-kind-icon">stream<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.streamhandler.html" class="tsd-signature-type">StreamHandler</a><span class="tsd-signature-symbol"> = StreamHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1704">src/rules/requests/request-handlers.ts:1704</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1732">src/rules/requests/request-handlers.ts:1732</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -650,7 +661,7 @@
 						<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <a href="../classes/_rules_requests_request_handlers_.timeouthandler.html" class="tsd-signature-type">TimeoutHandler</a><span class="tsd-signature-symbol"> = TimeoutHandler</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/cc6bffa/src/rules/requests/request-handlers.ts#L1708">src/rules/requests/request-handlers.ts:1708</a></li>
+								<li>Defined in <a href="https://github.com/httptoolkit/mockttp/blob/3f2b939/src/rules/requests/request-handlers.ts#L1736">src/rules/requests/request-handlers.ts:1736</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -707,7 +718,7 @@
 						<a href="../interfaces/_rules_requests_request_handlers_.callbackrequestresult.html" class="tsd-kind-icon">Callback<wbr>Request<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_rules_requests_request_handlers_.callbackresponseresult.html" class="tsd-kind-icon">Callback<wbr>Response<wbr>Result</a>
+						<a href="../interfaces/_rules_requests_request_handlers_.callbackresponsemessageresult.html" class="tsd-kind-icon">Callback<wbr>Response<wbr>Message<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_rules_requests_request_handlers_.forwardingoptions.html" class="tsd-kind-icon">Forwarding<wbr>Options</a>
@@ -741,6 +752,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_rules_requests_request_handlers_.streamhandlermessage.html" class="tsd-kind-icon">Stream<wbr>Handler<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_rules_requests_request_handlers_.html#callbackresponseresult" class="tsd-kind-icon">Callback<wbr>Response<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_rules_requests_request_handlers_.html#serializedbuffer" class="tsd-kind-icon">Serialized<wbr>Buffer</a>
